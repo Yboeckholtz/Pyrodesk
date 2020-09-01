@@ -1,9 +1,26 @@
-<app-header></app-header>
-<div class="row">
-  <div class="col-8">
-    <app-touch-view></app-touch-view>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12" style="padding-left: unset; padding-right: unset;">
+      <app-header></app-header>
+    </div>
   </div>
-  <div class="col-4">
-    <app-checkout></app-checkout>
-  </div>
+
+  
+    <div class="row"> 
+      <div class="col-8">
+        <div class="container">
+          <app-toggle-bar></app-toggle-bar>
+            <app-touch-view></app-touch-view>
+        </div>
+      </div>
+      <div class="col-4" style="height: 704px; padding-right: 0;">
+        <app-checkout></app-checkout>
+      </div>
+      
+      
+    </div>
+  
+
 </div>
+
+    

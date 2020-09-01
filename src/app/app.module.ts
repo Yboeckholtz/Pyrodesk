@@ -9,6 +9,7 @@ import { TouchViewComponent } from './view/touch-view/touch-view.component';
 import { CategorieListComponent } from './view/touch-view/categorie-list/categorie-list.component';
 import { ProductListComponent } from './view/touch-view/product-list/product-list.component';
 import { ViewComponent } from './view/view.component';
+import { ProductItemComponent } from './view/touch-view/product-list/product-item/product-item.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ViewComponent } from './view/view.component';
     TouchViewComponent,
     CategorieListComponent,
     ProductListComponent,
-    ViewComponent
+    ViewComponent,
+    ProductItemComponent
   ],
   imports: [
     BrowserModule

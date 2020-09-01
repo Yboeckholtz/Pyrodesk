@@ -1,4 +1,24 @@
-nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
-    color: #fff;
-    background-color: #3276b1
+
+
+.categories{
+    background-color: #e6e6e6;
+    margin-left: 15px;
+    padding: 0;
+}
+
+a {
+    color: black;
+
+}
+
+:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+.nav-link {
+    border-style: solid;
+    border-color: #dadada;
+    border-width: 1px;
+    width: 100%;
 }
