@@ -3,17 +3,3 @@
     height: calc(100vh - 47px);
 }
 
-.btn-checkout{ 
-    background-color: #0090e3;
-    border: none;
-}
-
-.btn-discount{
-    background-color: #f8ac59;
-    border: none;
-}
-.btn-cancel{
-    background-color: #ed5565;
-    border: none;
-}
-
