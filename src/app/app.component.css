@@ -16,5 +16,10 @@
     margin-right:auto;
     margin-left:auto 
  }
+
+ .checkout {
+   padding-left: unset; 
+   padding-right: unset;
+ }
  
  

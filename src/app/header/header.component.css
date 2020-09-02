@@ -1,7 +1,12 @@
 .navbar{
     background-color: #0090e3;
+    height: 50px;
 }
 
 .far {
+    color: white;
+}
+.logOutBtn{
+    text-align:right;
     color: white;
 }

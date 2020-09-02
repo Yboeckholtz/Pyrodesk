@@ -11,9 +11,10 @@ a {
 
 }
 
-:hover {
+a:hover {
     color: grey;
     text-decoration: none;
+    opacity: 0.5;
 }
 
 .nav-link {
