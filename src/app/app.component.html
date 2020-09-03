@@ -10,6 +10,16 @@
         <div [hidden]="isDisplay" class="touchView">
           <app-touch-view></app-touch-view>
         </div>
+        <div [hidden]="!isDisplay" class="keyboardView">
+          <app-keyboard-view></app-keyboard-view>
+        </div>
+          <div class="footer"> 
+            <div class="container">
+              <p class="text-muted"> Developed by Vesta Group</p>
+            </div>
+          </div>
+       
+
     </div>
       <div class="col-4  checkout">
         <app-checkout></app-checkout>

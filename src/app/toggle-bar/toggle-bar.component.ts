@@ -7,13 +7,14 @@
   })
   export class ToggleBarComponent implements OnInit {
     isDisplay = false;
-   
+    
     @Output() showHide: EventEmitter<boolean> = new EventEmitter();
    
     toggleDisplay(){
      this.isDisplay = !this.isDisplay;
-     this.showHide.emit(this.isDisplay)
+     this.showHide.emit(this.isDisplay);
     }
+
     constructor() { }
    
     ngOnInit(): void {
