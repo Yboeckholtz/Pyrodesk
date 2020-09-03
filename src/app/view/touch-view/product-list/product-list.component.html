@@ -1,12 +1,10 @@
 <div class="row">
     <div class="col-3"  *ngFor="let product of products">
-        <a href="#" class="list-group-item clearfix">
+        <a href="#" class="list-group-item clearfix" >
             <span class="pull-left">
                 <img 
                 src="{{ product.imagePath }}" 
-                alt="{{ product.name }}" 
-                class="img-responsive" 
-                style="max-height: 90px;">
+                alt="{{ product.name }}" >
             </span>
             <div class="productName">
                 <h6 class="card-title"> {{product.name}} </h6>

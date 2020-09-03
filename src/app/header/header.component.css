@@ -1,6 +1,7 @@
 .navbar{
     background-color: #0090e3;
     height: 50px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .far {
@@ -9,4 +10,6 @@
 .logOutBtn{
     text-align:right;
     color: white;
+    padding-right: 0;
+
 }

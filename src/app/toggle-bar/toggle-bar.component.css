@@ -1,10 +1,25 @@
-.row {
-    height: 40px;
+.row.toggleBar {
+    height: 50px;
     margin-left: 0px;
     margin-bottom: 15px;
     margin-top: 15px;
-}
-.col-12 {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+
 }
 
+.col-12{
+    text-align: right;
+}
+
+.btn{
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #0090e3;
+    color: white;
+    font-size: 13px;
+}

@@ -6,13 +6,14 @@
   </div>
     <div class="row"> 
       <div class="col-8">
-          <app-toggle-bar></app-toggle-bar>
+        <app-toggle-bar (showHide)=onShowHide($event)></app-toggle-bar>
+        <div [hidden]="isDisplay" class="touchView">
           <app-touch-view></app-touch-view>
-      </div>
-      <div class="col-4 checkout">
+        </div>
+    </div>
+      <div class="col-4  checkout">
         <app-checkout></app-checkout>
       </div>
     </div>
 </div>
-<i class="far fa-keyboard"></i>
     
