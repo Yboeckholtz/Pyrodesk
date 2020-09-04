@@ -1,0 +1,26 @@
+.productName{
+    text-align: center;
+}
+a { 
+    color: black;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+:hover {
+    color: grey;
+}
+a:hover{
+    opacity: 0.5;
+}
+
+img { 
+    width:100%;
+    
+}
+.col-3{
+    padding-left: 5px;
+    padding-right: 5px;
+    max-height: 135px;
+    max-width: 135px;
+}

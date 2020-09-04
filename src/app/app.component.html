@@ -1,8 +1,29 @@
-<nav class="navbar navbar-light bg-light justify-content-between">
-  <a class="navbar-brand">Vesta Vuurwerk</a>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12" style="padding-left: unset; padding-right: unset;">
+      <app-header></app-header>
+    </div>
+  </div>
+    <div class="row"> 
+      <div class="col-8">
+        <app-toggle-bar (showHide)=onShowHide($event)></app-toggle-bar>
+        <div [hidden]="isDisplay" class="touchView">
+          <app-touch-view></app-touch-view>
+        </div>
+        <div [hidden]="!isDisplay" class="keyboardView">
+          <app-keyboard-view></app-keyboard-view>
+        </div>
+          <div class="footer"> 
+            <div class="container">
+              <p class="text-muted"> Developed by Vesta Group</p>
+            </div>
+          </div>
+       
 
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
-</nav>
+    </div>
+      <div class="col-4  checkout">
+        <app-checkout></app-checkout>
+      </div>
+    </div>
+</div>
+    

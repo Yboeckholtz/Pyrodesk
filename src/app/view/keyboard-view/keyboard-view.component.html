@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">Search and Add Products</div>
+    </div>
+    <div class="row">
+        <div class="col-12">Zoek op artikelnummer of naam</div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+    <!-- Search form -->
+             <form class="form-inline waves-light" mdbWavesEffect>
+                <div class="md-form mt-0">
+                     <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                </div>
+             </form>
+        </div>
+    </div>
+    <!-- End search form-->
+    <div class="container">
+        <div class="row productTable">
+            <div class="col-1 tableItem">#</div>
+            <div class="col-4 tableItem">Product Name</div>
+            <div class="col-2 tableItem">Free Stock</div>
+            <div class="col-2 tableItem">Price</div>
+            <div class="col-3 tableItem">Actions</div>
+        </div>
+
+        <div class="row searchedItems" *ngFor="let product of products">
+            <div class="col-1 tableItem">{{ product.id }}</div>
+            <div class="col-4 tableItem">{{ product.name }}</div>
+            <div class="col-2 tableItem">{{ product.quantity }}</div>
+            <div class="col-2 tableItem">{{ product.price }}</div>
+            <div class="col-3 tableItem">
+                 <button type="button" class="btn btn-addFree">Add Free</button>
+                 <button type="button" class="btn btn-addToCart">Add to cart</button>
+            </div>
+        </div>
+    </div>
+</div>

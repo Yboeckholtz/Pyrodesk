@@ -1,0 +1,47 @@
+.checkout{
+    background-color: #22303e;
+    height: calc(100vh - 50px);
+    color: white;
+}
+.checkoutBtn{
+   background-color: #0090e3; height: 50px;
+   text-align: center;
+   line-height: 50px 
+}
+
+.addDiscountBtn{
+    background-color:#f8ac59; height: 50px;
+    text-align: center;
+    line-height: 50px
+
+}
+
+.cancelBtn{
+    background-color: #ed5565; height: 50px;
+    text-align: center;
+    line-height: 50px
+
+}
+a.checkoutBtn{
+    width: 100%;
+    color: white;
+}
+a.addDiscountBtn{
+    width: 50%;
+    color: white;
+}
+a.cancelBtn{
+     width: 50%;
+     color: white;
+}
+
+a:hover{
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.checkoutTable{
+    position: ;
+    top: 0;
+    padding-top: 50px;
+}
