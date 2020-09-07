@@ -11,7 +11,8 @@ import { TouchViewComponent } from './view/touch-view/touch-view.component';
 import { CategorieListComponent } from './view/touch-view/categorie-list/categorie-list.component';
 import { ProductListComponent } from './view/touch-view/product-list/product-list.component';
 import { ViewComponent } from './view/view.component';
-import { KeyboardViewComponent} from './view/keyboard-view/keyboard-view.component'
+import { KeyboardViewComponent} from './view/keyboard-view/keyboard-view.component';
+import { ProductItemComponent } from './view/touch-view/product-list/product-item/product-item.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { KeyboardViewComponent} from './view/keyboard-view/keyboard-view.compone
     KeyboardViewComponent,
     CategorieListComponent,
     ProductListComponent,
-    ViewComponent
+    ViewComponent,
+    ProductItemComponent
   ],
   imports: [
     BrowserModule,

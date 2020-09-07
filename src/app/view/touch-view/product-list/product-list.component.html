@@ -1,17 +1,20 @@
 <div class="row">
-        <div class="col-3"  *ngFor="let product of products">
-            <a href="#" class="list-group-item clearfix" >
+        <div class="col-3"  *ngFor="let product of productList">
+            <a href="#" class="list-group-item clearfix" [productItem]="product">
                 <span class="pull-left">
                     <img 
-                    src="{{ product.imagePath }}" 
+                    style ="height: 72px;"
+                    [src]="product.imagePath"
                     alt="{{ product.name }}" >
                 </span>
-                    <div class="productName">
-                    <p>{{product.name}} </p> 
-                </div>
+                <div class="productName">
+                    <p> <b> {{product.name}}  </b> <br>  Price: €{{product.price}}</p>
+                </div>  
+                
             </a>  
         </div>
     </div>
+
         <!-- <div id="pagination">
             | paginate: {itemsPerPage: 16, currentPage:p, totalItems: totalCount}"
             <pagination-controls (pageChange)="p = $event" ></pagination-controls>

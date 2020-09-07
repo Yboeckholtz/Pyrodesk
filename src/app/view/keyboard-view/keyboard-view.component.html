@@ -16,24 +16,28 @@
         </div>
     </div>
     <!-- End search form-->
-    <div class="container">
-        <div class="row productTable">
-            <div class="col-1 tableItem">#</div>
-            <div class="col-4 tableItem">Product Name</div>
-            <div class="col-2 tableItem">Free Stock</div>
-            <div class="col-2 tableItem">Price</div>
-            <div class="col-3 tableItem">Actions</div>
-        </div>
-
-        <div class="row searchedItems" *ngFor="let product of products">
+    <div class="row productTable">
+        <div class="col-1 tableItem">#</div>
+        <div class="col-3 tableItem">Product Name</div>
+        <div class="col-2 tableItem">Free Stock</div>
+        <div class="col-2 tableItem">Price</div>
+        <div class="col-4 tableItem">Actions</div>
+    </div>
+    <div class="container" style=" height: 70vh; overflow: scroll;">
+        <div class="row searchedItems" *ngFor="let product of productList" [productItem]="product"> 
             <div class="col-1 tableItem">{{ product.id }}</div>
-            <div class="col-4 tableItem">{{ product.name }}</div>
+            <div class="col-3 tableItem">{{ product.name }}</div>
             <div class="col-2 tableItem">{{ product.quantity }}</div>
             <div class="col-2 tableItem">{{ product.price }}</div>
-            <div class="col-3 tableItem">
+            <div class="col-4 tableItem">
                  <button type="button" class="btn btn-addFree">Add Free</button>
                  <button type="button" class="btn btn-addToCart">Add to cart</button>
             </div>
         </div>
     </div>
 </div>
+        <!-- <div id="pagination">
+            | paginate: {itemsPerPage: 16, currentPage:p, totalItems: totalCount}"
+            <pagination-controls (pageChange)="p = $event" ></pagination-controls>
+        </div>  -->
+

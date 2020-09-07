@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-touch-view',
@@ -11,9 +12,10 @@ export class TouchViewComponent implements OnInit {
   toggleDisplay(){
     this.isDisplay = !this.isDisplay;
   }
-  constructor() { }
+  constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
+    console.log(this.productService.getProducts())
   }
 
 }
