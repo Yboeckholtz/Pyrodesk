@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { NgxPaginationModule } from 'ngx-pagination';
 
@@ -14,6 +15,7 @@ import { ViewComponent } from './view/view.component';
 import { KeyboardViewComponent} from './view/keyboard-view/keyboard-view.component';
 import { ProductItemComponent } from './view/touch-view/product-list/product-item/product-item.component';
 import { CheckoutItemComponent } from './checkout/checkout-item/checkout-item.component';
+import { ProductFilterPipe } from './product-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -27,13 +29,15 @@ import { CheckoutItemComponent } from './checkout/checkout-item/checkout-item.co
     ProductListComponent,
     ViewComponent,
     ProductItemComponent,
-    CheckoutItemComponent
+    CheckoutItemComponent,
+    ProductFilterPipe
   ],
   imports: [
     BrowserModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [ ProductFilterPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
