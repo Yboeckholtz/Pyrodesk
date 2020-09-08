@@ -31,7 +31,7 @@
             <div class="col-2 tableItem">{{ product.price }}</div>
             <div class="col-4 tableItem">
                  <button type="button" class="btn btn-addFree">Add Free</button>
-                 <button type="button" class="btn btn-addToCart">Add to cart</button>
+                 <button type="button" class="btn btn-addToCart" (click)="onAddToCheckoutList(product)">Add to cart</button>
             </div>
         </div>
     </div>

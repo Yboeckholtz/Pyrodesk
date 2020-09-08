@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../../models/product.model';
 import { ProductService } from 'src/app/services/product.service';
+import { MessengerService } from 'src/app/services/messenger.service';
 
 @Component({
   selector: 'app-keyboard-view',
@@ -12,10 +13,13 @@ export class KeyboardViewComponent implements OnInit {
   productList: Product[] = [];
 
 
-  constructor(private productService: ProductService) { }
+  constructor(private productService: ProductService, private msg: MessengerService) { }
 
   ngOnInit(): void {
     this.productList = this.productService.getProducts()
   }
-
+  
+  onAddToCheckoutList(product){
+    this.msg.sendMsg(product)
+  }
 }

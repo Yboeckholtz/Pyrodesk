@@ -1,6 +1,10 @@
 <div class="row">
         <div class="col-3"  *ngFor="let product of productList">
-            <a href="#" class="list-group-item clearfix" [productItem]="product">
+            <a href="#" 
+            class="list-group-item clearfix" 
+            [productItem]="product"
+            (click)="onAddToCheckoutList(product)"
+            >
                 <span class="pull-left">
                     <img 
                     style ="height: 72px;"

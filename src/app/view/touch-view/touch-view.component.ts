@@ -15,7 +15,7 @@ export class TouchViewComponent implements OnInit {
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
-    console.log(this.productService.getProducts())
+    // console.log(this.productService.getProducts())
   }
 
 }
